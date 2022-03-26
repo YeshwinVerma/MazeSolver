@@ -1,0 +1,7 @@
+<app-display [grid]="grid"></app-display>
+<br>
+Grid Size:<input type="text" [(ngModel)]="cols"> x <input type="text" [(ngModel)]="rows">
+<br>
+Delay(in Ms):<input type="text" [(ngModel)]="delay">
+<br>
+<button (click)="initializeGrid();startAStar();">Start</button>

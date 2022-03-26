@@ -1,0 +1,9 @@
+
+<div *ngFor="let col of grid">
+    <div class="holder">
+        <div *ngFor="let spot of col">
+            <button [ngClass]="spot.wall?black:spot.color"></button>
+        </div>
+    </div>
+</div>
+
